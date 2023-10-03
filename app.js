@@ -250,7 +250,7 @@ function playDiceGame(sides) {
     }
 }
 
-playDiceGame(10); // Play with a 10-sided die
+// playDiceGame(10); // Play with a 10-sided die
 
 
 // Challenge 3: Calculate Die Throw Probability:
@@ -300,3 +300,33 @@ const findWord = function(word) {
 
 
 // console.log(findWord("oneTwoThreeFourFiveSix"));
+
+
+
+
+/// Reverse a String:
+// Write a function that takes a string as input and returns the string reversed.
+
+function reverseStr(str){
+    return str.split("").reverse().join("");
+}
+
+// console.log(reverseStr("hello"));
+
+// Palindrome Checker:
+// Create a function that checks if a given word or phrase is a palindrome (reads the same forwards and backwards).
+
+function checkPalaindrome(str){
+    if (str === str.split("").reverse().join("")) { 
+        return "yes the string palaindrome !"
+        
+    }
+    else{
+        return "no "
+    }
+}
+// console.log(checkPalaindrome("civic"));
+
+
+
+
