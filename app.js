@@ -328,5 +328,28 @@ function checkPalaindrome(str){
 // console.log(checkPalaindrome("civic"));
 
 
+// FizzBuzz:
+// Write a program that prints the numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for the multiples of 5, print "Buzz." For numbers which are multiples of both 3 and 5, print "FizzBuzz."
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+
+function check(str, ending){
+    return str.endsWith(ending)
+}
+console.log(check("hello" , "ldado"))
+
 
 
