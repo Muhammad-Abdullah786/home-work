@@ -333,14 +333,24 @@ function checkPalaindrome(str){
 
 
 
+/** 
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 ===0 && i % 5 ===0) {
+            console.log("FizzBuzz"); 
+        }
+        else if ((i % 3) === 0 ) {
+            console.log("Fizz");
+        }
+        else if ((i % 5)===0){
+            console.log("Buzz");
+        }
+        else{
+        console.log(i);
+        }
+        
+    }
 
-
-
-
-
-
-
-
+*/
 
 
 // Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
@@ -349,7 +359,8 @@ function checkPalaindrome(str){
 function check(str, ending){
     return str.endsWith(ending)
 }
-console.log(check("hello" , "ldado"))
+// console.log(check("hello" , "ldado"))
+
 
 
 
