@@ -7,64 +7,17 @@
 </head>
 hello 
 <p id="first"> this is h1 </p>
+<form action="">
+    <input type="submit" value="submit" placeholder="Enter name" id="firstField">
+    <input type="reset" value="reset">
+</form>
 <body>
-    <script src="app.js">
- // inner  html and outter html
+    <script>
 
-//  console.log(first.innerHTML); // show what is inside the first element
-//  console.log(first.outerHTML); // show the whole tag of the first element
- 
- first.innerHTML =  "<b> this is bold inner html</b>";
- 
-//  console.log(first.innerHTML); // this made another tag of the first element can be seen in inspect
+var usrInp = document.getElementById("firstField");
 
 
-// function that calculates ractangel area
-console.log("connecting");
-function calculateAreaRectangle(x,y){
-    return x*y;
-}
 
-console.log(calculateAreaRectangle(2,2));
-
-// Challenge 2: Function Parameters
-// Create a function called greetUser that takes a person's name as a parameter and returns a greeting message. For example, if the name is "John," the function should return "Hello, John!"
-
-function greetUser(person){
-    person = prompt("your name:")
-    return "Greeting! " + person
-}
-
-// console.log(greetUser());
-
-
-// //Challenge 3: Function Return
-// Write a function called isEven that takes an integer as an argument and returns true if it's even and false if it's odd.
-
-function isEven(argument){
-    argument = +prompt("whats the number?:")
-    if (argument === undefined) {
-        return("You must pass an integer")
-    }
-    else if (argument === ""){
-        return("You must pass an integer")
-    }
-    if ((argument % 2) === 0 ) {
-        return true
-    }
-    else{
-        return false
-    }
-}
-// console.log(isEven());
-
-// Challenge 4: Switch Statements
-// Create a function called getDayOfWeek that takes a number (1 for Sunday, 2 for Monday, etc.) as an argument and returns the corresponding day of the week as a string. Use a switch statement to implement this.
-
-
-function getDayOfWeek (number = 1) {
-    
-}
     </script>
 </body>
 </html>
