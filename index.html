@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-hello 
-<p id="first"> this is h1 </p>
-<form action="">
-    <input type="submit" value="submit" placeholder="Enter name" id="firstField">
-    <input type="reset" value="reset">
+<!-- hello  -->
+<!-- <p id="first"> this is h1 </p> -->
+<form >
+    <input type="text" placeholder="To Do List" id="userInput">
+    <button type="submit" id="firstField">click</button>
+    <div class="first"></div>
 </form>
 <body>
     <script>
+        // aabout to make a to do list of people
+        var userInput = document.getElementById("userInput");
+        var x = document.getElementsByClassName("first")[0];
+        var firstField = document.getElementById("firstField");
+        
+        function handel(e){
+            e.preventDefault();
+            let div = document.createElement("div");
+            div.innerText = userInput.value
+            x.appendChild(div);
+            if(userInput.value == ""){
+                alert("Please enter something");
+                return;
+            }
+            // now we  will put the delete button on the right of the div
+            let deleteButton = document.createElement("button");
+            deleteButton.innerText = "delete";
+            div.appendChild(deleteButton);
+            deleteButton.addEventListener("click", function(){
+                div.remove();
+            })
+            
+        }
+        firstField.addEventListener("click",handel)
 
-var usrInp = document.getElementById("firstField");
 
 
 
