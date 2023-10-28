@@ -44,14 +44,34 @@ console.log("connexted");
 
 // recursion
 
-var count = 0
-function recursion(){
-    count ++
-    if (count === 30) {
-        return
-    }
+// var count = 0
+// function recursion(){
+//     count ++
+//     if (count === 30) {
+//         return // if the c
+//     }
 
-    console.log(count * 2); // what you want to do? here i amd multiplyting 
-    recursion() // recursive call 
+//     console.log(count * 2); // what you want to do? here i amd multiplying 
+//     recursion() // recursive call 
+// }
+// recursion() // calling the function normally
+
+
+
+
+function hello() {
+  let a ='eawwass' 
+  console.log(a)
 }
-recursion() // calling the function normally
+console.log(hello());
+
+
+
+
+
+
+
+
+
+
+
